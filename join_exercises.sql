@@ -38,7 +38,6 @@ from  employees EMP
   LEFT JOIN departments DEPT ON (DEMP.dept_no = DEPT.dept_no)
 WHERE T.to_date >= current_date() and  DEMP.to_date >= current_date() and DEPT.dept_no = 'd009'
 GROUP BY T.title
-ORDER BY t.title;
 
 SELECT DISTINCT dept.dept_name, concat(emp.first_name, ' ', emp.last_name) as full_name, SAL.salary
 from departments dept
